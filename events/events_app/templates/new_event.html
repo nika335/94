@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1> add new event </h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="title">Title:</label>
+        <input type="text" name="title">
+        <br>
+        <label for="description">Description:</label>
+        <input type="text" name="description">
+        <br>
+        <label for="date">Date:</label>
+        <input type="text" name="date">
+        <br>
+        <label for="title">Location:</label>
+        <input type="text" name="location">
+        <br>
+        <input type="submit" value="add event">
+
+    </form>
+</body>
+</html>
